@@ -1,0 +1,10 @@
+{
+    "cSpell.enabled": true,
+    "cSpell.words": [
+        "Solix"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    }
+}
