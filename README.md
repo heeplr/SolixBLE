@@ -1,15 +1,13 @@
 # SolixBLE
 
-[![PyPI Status](https://img.shields.io/pypi/v/SolixBLE.svg)](https://pypi.python.org/pypi/SolixBLE)
-[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+Python module for monitoring Anker Solix Solarbank power stations over Bluetooth based on
+the [code from flip-dots](https://github.com/flip-dots/SolixBLE).
 
-Python module for monitoring Anker Solix power stations over Bluetooth.
  - 👌 Free software: MIT license
- - 🍝 Sauce: https://github.com/flip-dots/SolixBLE
- - 📦 PIP: https://pypi.org/project/SolixBLE/
+ - 🍝 Sauce: https://github.com/heeplr/SolixBLE
 
 
-This Python module enables you to monitor Anker Solix devices directly
+This Python module enables you to monitor Anker Solix Solarbank devices directly
 from your computer, without the need for any cloud services or Anker app.
 It leverages the Bleak library to interact with Bluetooth Anker Solix power stations.
 No pairing is required in order to receive telemetry data.
@@ -17,22 +15,19 @@ No pairing is required in order to receive telemetry data.
 
 ## Features
 
-- 🔋 Battery percentage
+- 🔋 Battery percentage, charge/discharge, temperature
 - ⚡ Total Power In/Out
-- 🔌 AC Power In/Out
-- 🚗 DC Power In/Out
-- ⏰ AC/DC Timer value
-- ⏲️ Time remaining to full/empty
+- 🔌 Total AC Power Out
+- 🚗 Total Solar Power In/Out
 - ☀️ Solar Power In
-- 📱 USB Port Status
-- 💡 Light bar status
+(- 💡 Light bar status)
 - 🔂 Simple structure
 - ✔️ More emojis than strictly necessary
 
 
 ## Supported Devices
 
-- C300X
+- Solarbank 2 Pro
 - Maybe more? IDK
 
 
@@ -73,3 +68,5 @@ the dependencies are installed as well.
 ```
 pip install bleak bleak-retry-connector
 ```
+
+```solixble.py``` is a standalone example that outputs status messages as one json dictionary per line.
